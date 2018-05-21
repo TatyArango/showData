@@ -1,0 +1,5 @@
+<div class="comments">
+  <div *ngFor="let comment of comments$ | async">
+    <app-card [data]= "comment" ></app-card>
+  </div>
+</div>

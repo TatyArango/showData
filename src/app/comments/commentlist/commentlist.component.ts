@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CommentlistComponent implements OnInit {
 	constructor(private resourseService: ResourseService) {}
-	url = 'http://jsonplaceholder.typicode.com/comments';
+	url = 'https://jsonplaceholder.typicode.com/comments';
 	comments$: Observable<any> = this.resourseService.getResource(this.url, 'body');
 
 	ngOnInit() {}

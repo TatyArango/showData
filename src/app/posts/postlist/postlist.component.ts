@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class PostlistComponent implements OnInit {
 	constructor(private resourseService: ResourseService) {}
 
-	url = 'http://jsonplaceholder.typicode.com/posts';
+	url = 'https://jsonplaceholder.typicode.com/posts';
 	posts$: Observable<any> = this.resourseService.getResource(this.url, 'title');
 	// poner el tipo observable en la variable post$ con la interface
 
